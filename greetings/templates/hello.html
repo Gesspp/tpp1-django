@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style/hello.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    <header class="welcome">
+        <h1>Welcome!</h1>
+    </header>
+    <h2>Hello, {{name}}</h2>
+    <h3>We're glad to see you here!</h3>
+    <div class="links">
+        <a href="{% url 'stats' %}">Go to general stats</a>
+        <a href="{% url 'index' %}">Go back to the home page</a>
+        <a href="{% url 'ststs' name %}">Go to stats</a>
+    </div>
+</body>
+</html>
