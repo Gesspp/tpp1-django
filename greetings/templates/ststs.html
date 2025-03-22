@@ -1,16 +1,23 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="{% static 'style/ststs.css' %}">
 </head>
 <body>
     <header class="welcome">
-        <h1>Stats for {{name}}</h1>
+        <h1>Statistics for {{name}}</h1>
     </header>
+    <h2>Greetings log:</h2>
     {% for greeting in greetings %}
-        <h2>{{greeting.when}}</h2>
+        <h3>{{greeting.when}}</h3>
     {% endfor %}
+    <div class="links">
+        <a href="{% url 'stats' %}">Go to general stats</a>
+        <a href="{% url 'stats' %}">Go back th the home page</a>
+    </div>
 </body>
 </html>

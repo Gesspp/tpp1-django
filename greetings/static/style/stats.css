@@ -6,3 +6,24 @@
     justify-content: center;
     align-items: center;
 }
+
+h1{
+    font-size: 74px;
+    font-weight: 600;
+    color: white;
+    font-family: 'Helvetica', sans-serif;
+}
+
+h2{
+    font-size: 60px;
+    color: rgb(90, 93, 254);
+}
+
+h3{
+    font-size: 24px;
+}
+
+a{
+    font-size: 24px;
+    color:rgb(30, 154, 44)
+}

@@ -14,5 +14,5 @@ def ststs(request, name):
     greetings = Greeting.objects.filter(name=name)
     return render(request, 'ststs.html', {'greetings': greetings, 'name': name})
 
-def index(request):
-    return render(request, 'index.html')
+# def index(request):
+#     return render(request, 'index.html')
